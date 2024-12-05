@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Details</title>
+</head>
+<body>
+<h1>Customer Details</h1>
+
+<div th:if="${errorMessage}" style="color: red;">
+    <p th:text="${errorMessage}"></p>
+</div>
+
+<div th:if="${customer}">
+    <p><strong>ID:</strong> <span th:text="${customer.id}"></span></p>
+    <p><strong>Title:</strong> <span th:text="${customer.title}"></span></p>
+    <p><strong>First Name:</strong> <span th:text="${customer.firstName}"></span></p>
+    <p><strong>Last Name:</strong> <span th:text="${customer.lastName}"></span></p>
+    <p><strong>Age:</strong> <span th:text="${customer.age}"></span></p>
+    <p><strong>Annual Income:</strong> <span th:text="${customer.annualIncome}"></span></p>
+    <p><strong>Username:</strong> <span th:text="${customer.loginUsername}"></span></p>
+    <p><strong>NIC Number:</strong> <span th:text="${customer.nicNumber}"></span></p>
+    <p><strong>Remarks:</strong> <span th:text="${customer.remarks}"></span></p>
+    <p><strong>Registered Date:</strong> <span th:text="${customer.registeredDate}"></span></p>
+</div>
+
+<a href="/customer-list"><button>Back to Customer List</button></a>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+</head>
+<body>
+
+
+<h1>Online Customer Registration Form</h1>
+<form action="/api/v1/customer" method="post">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title"><br>
+
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName"><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName"><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age"><br>
+
+    <label for="annualIncome">Annual Income:</label>
+    <input type="number" id="annualIncome" name="annualIncome" step="0.01"><br>
+
+    <label for="loginUsername">Login Username:</label>
+    <input type="text" id="loginUsername" name="loginUsername"><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br>
+
+    <label for="nicNumber">NIC Number:</label>
+    <input type="text" id="nicNumber" name="nicNumber"><br>
+
+    <label for="remarks">Remarks:</label>
+    <textarea id="remarks" name="remarks"></textarea><br>
+
+    <button type="submit">Register</button>
+</form>
+<br>
+<a href="/customer-list"><button>Customer List</button></a>
+
+
+</body>
+</html>
